@@ -11,7 +11,7 @@ for j = 1:n
     i = 1;
     while(i<=4)
         if((sigma(mx+i-1,j)==0)&&(eta(mx+i-1,j)==0))  % Encode the current position only if sigma and eta are zero at it.
-            w = func_sig(sigma,mx,i,j);
+            w = func_sig1(sigma,mx,i,j);
             Cj = Atmp(:,j)';
             if((i==1)&&(sum(sum(w))==0))
                 % Enable RLC mode;
